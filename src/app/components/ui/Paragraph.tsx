@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from "react";
 import { cva, VariantProps } from "class-variance-authority";
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/lib/utils";
 
 const ParagraphVariants = cva(
   "max-w-prose text-slate-700 dark:text-slate-300 mb-2 text-center",
