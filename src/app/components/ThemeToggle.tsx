@@ -2,15 +2,14 @@
 
 import * as React from "react";
 import { useTheme } from "next-themes";
-
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../components/ui/DropdownMenu";
-import { Laptop, Moon, Sun } from "lucide-react";
+} from "./ui/DropdownMenu";
 import Button from "./ui/Button";
+import { Laptop, Moon, Sun } from "lucide-react";
 
 export function ThemeToggle() {
   const { setTheme } = useTheme();
@@ -41,5 +40,3 @@ export function ThemeToggle() {
     </DropdownMenu>
   );
 }
-
-export default ThemeToggle;
