@@ -22,7 +22,7 @@ interface LargeHeadgingProps
   extends HTMLAttributes<HTMLParagraphElement>,
     VariantProps<typeof HeadingVariants> {}
 
-const Paragraph = React.forwardRef<HTMLHeadingElement, LargeHeadgingProps>(
+const LargeHeading = React.forwardRef<HTMLHeadingElement, LargeHeadgingProps>(
   ({ className, size, children, ...props }, ref) => {
     return (
       <h1
@@ -36,5 +36,5 @@ const Paragraph = React.forwardRef<HTMLHeadingElement, LargeHeadgingProps>(
   }
 );
 
-Paragraph.displayName = "Paragraph";
-export default Paragraph;
+LargeHeading.displayName = "LargeHeading";
+export default LargeHeading;
